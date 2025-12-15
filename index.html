@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Əli — Şəxsi Portfel</title>
+  <meta name="description" content="Əli — Frontend & Creative Developer. Portfel, layihələr, xidmətlər, bloq və əlaqə." />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (ikonlar) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- AOS (scroll animasiyalar) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+  <!-- Stil -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Hərəkətli arxa plan -->
+  <div id="bg-gradient"></div>
+  <canvas id="particles"></canvas>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Əli</a>
+      <nav class="nav">
+        <a href="#home" class="nav-link">Ana səhifə</a>
+        <a href="#about" class="nav-link">Haqqında</a>
+        <a href="#projects" class="nav-link">Layihələr</a>
+        <a href="#services" class="nav-link">Xidmətlər</a>
+        <a href="#blog" class="nav-link">Bloq</a>
+        <a href="#contact" class="nav-link">Əlaqə</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Menyu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu">
+    <a href="#home" class="mobile-link">Ana səhifə</a>
+    <a href="#about" class="mobile-link">Haqqında</a>
+    <a href="#projects" class="mobile-link">Layihələr</a>
+    <a href="#services" class="mobile-link">Xidmətlər</a>
+    <a href="#blog" class="mobile-link">Bloq</a>
+    <a href="#contact" class="mobile-link">Əlaqə</a>
+  </div>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <h1 class="hero-title">
+        Salam, mən <span class="accent">Əli</span><br>
+        professional UI/UX ilə canlı veb saytlar hazırlayıram
+      </h1>
+      <p class="hero-sub">
+        Frontend & Creative Developer — animasiya, interaktivlik və performans yönümlü layihələr.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn primary">Layihələr</a>
+        <a href="#contact" class="btn outline">Əlaqə</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number" data-count="7">0</span>
+          <span class="stat-label">Layihə</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-count="0">0</span>
+          <span class="stat-label">Müştəri</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-count="2">0</span>
+          <span class="stat-label">İnkişafda</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Haqqında -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-right">Haqqında</h2>
+      <div class="about-grid">
+        <div class="about-card hover-lift" data-aos="fade-up">
+          <!-- Öz şəkil linkini buraya qoy -->
+          <img src="https://i.imgur.com/BmNxPul.png" alt="Əli'nin şəkli" class="about-photo" />
+        </div>
+        <div class="about-text hover-glow" data-aos="fade-up" data-aos-delay="150">
+          <p>
+            Mən Əli Qurbanov — canlı, interaktiv və performanslı veb saytlar hazırlayıram. HTML, CSS, JS ilə təmiz və modul kod yazır,
+            GSAP və AOS ilə animasiyalar qururam. UI/UX prinsiplərinə önəm verərək sürətli, responsiv interfeyslər dizayn edirəm.
+            Əlavə Olaraq aşbazlıq təcrübəm var və 5 illik musiqi təcrübəm var.
+          </p>
+          <p>
+            Missiyam: texnologiyanı əlçatan etmək, güclü vizual identitetlə insanları bir araya gətirən platformalar yaratmaq.
+            Sosial media inteqrasiyaları, SEO və yüngül performans optimizasiyaları mənim standartımdır.
+          </p>
+
+          <div class="skills-wrap">
+            <div class="skills">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3 / SCSS</span>
+              <span class="tag">JavaScript</span>     
+              <span class="tag">Responsive</span>
+              <span class="tag">Accessibility</span>
+              <span class="tag">Piano</span>
+              <span class="tag">Cook</span>
+            </div>
+          </div>
+
+          <div class="about-counters">
+            <div class="counter-card">
+              <div class="counter-icon"><i class="fa-solid fa-star"></i></div>
+              <div class="counter-content">
+                <p class="counter-number" data-count="4">0</p>
+                <p class="counter-label">İllik təcrübə</p>
+              </div>
+            </div>
+            <div class="counter-card">
+              <div class="counter-icon"><i class="fa-solid fa-trophy"></i></div>
+              <div class="counter-content">
+                <p class="counter-number" data-count="6">0</p>
+                <p class="counter-label">Mükafat</p>
+              </div>
+            </div>
+            <div class="counter-card">
+              <div class="counter-icon"><i class="fa-solid fa-users"></i></div>
+              <div class="counter-content">
+                <p class="counter-number" data-count="">0</p>
+                <p class="counter-label">Komanda işi</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Layihələr -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-right">Layihələr</h2>
+      <div class="projects-grid">
+        <article class="project-card hover-lift" data-aos="zoom-in">
+          <div class="project-cover cover-1"></div>
+          <div class="project-content">
+            <h3 class="project-title hover-glow">Portfolio V1</h3>
+            <p class="project-desc">Minimal, sürətli və SEO dostu portfel strukturu.</p>
+            <a href="#" class="project-link">Demo</a>
+          </div>
+        </article>
+        <article class="project-card hover-lift" data-aos="zoom-in" data-aos-delay="100">
+          <div class="project-cover cover-2"></div>
+          <div class="project-content">
+            <h3 class="project-title hover-glow">Animasiya Landing</h3>
+            <p class="project-desc">GSAP & AOS ilə yumşaq animasiyalar və mikro-interaksiyalar.</p>
+            <a href="#" class="project-link">Demo</a>
+          </div>
+        </article>
+        <article class="project-card hover-lift" data-aos="zoom-in" data-aos-delay="200">
+          <div class="project-cover cover-3"></div>
+          <div class="project-content">
+            <h3 class="project-title hover-glow">Canvas Particles</h3>
+            <p class="project-desc">Canvas üzərində performanslı hissəcik animasiyası.</p>
+            <a href="#" class="project-link">Demo</a>
+          </div>
+        </article>
+        <article class="project-card hover-lift" data-aos="zoom-in" data-aos-delay="300">
+          <div class="project-cover cover-4"></div>
+          <div class="project-content">
+            <h3 class="project-title hover-glow">UI Kit</h3>
+            <p class="project-desc">Təmiz komponentlər, formalar və interaktiv elementlər.</p>
+            <a href="#" class="project-link">Demo</a>
+          </div>
+        </article>
+        <article class="project-card hover-lift" data-aos="zoom-in" data-aos-delay="400">
+          <div class="project-cover cover-5"></div>
+          <div class="project-content">
+            <h3 class="project-title hover-glow">3D Hero</h3>
+            <p class="project-desc">Three.js ilə 3D səhnə və parlaq effektlər.</p>
+            <a href="#" class="project-link">Demo</a>
+          </div>
+        </article>
+        <article class="project-card hover-lift" data-aos="zoom-in" data-aos-delay="500">
+          <div class="project-cover cover-6"></div>
+          <div class="project-content">
+            <h3 class="project-title hover-glow">Form Wizard</h3>
+            <p class="project-desc">Çox mərhələli forma, doğrulama və smooth animasiyalar.</p>
+            <a href="#" class="project-link">Demo</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Xidmətlər -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-right">Xidmətlər</h2>
+      <div class="services-grid">
+        <div class="service-card hover-lift" data-aos="flip-left">
+          <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+          <h3>Web Development</h3>
+          <p>HTML, CSS, JS ilə tam saytlar. Performans, təhlükəsizlik və SEO standartları.</p>
+        </div>
+        <div class="service-card hover-lift" data-aos="flip-left" data-aos-delay="100">
+          <div class="service-icon"><i class="fa-solid fa-paintbrush"></i></div>
+          <h3>UI/UX Dizayn</h3>
+          <p>Estetik, istifadəçi dostu interfeys. Rəng palitrası və tipografiya balansı.</p>
+        </div>
+        <div class="service-card hover-lift" data-aos="flip-left" data-aos-delay="200">
+          <div class="service-icon"><i class="fa-solid fa-bolt"></i></div>
+          <h3>Animasiya</h3>
+          <p>GSAP və CSS ilə canlı effektlər, mikro-interaksiyalar və smooth keçidlər.</p>
+        </div>
+        <div class="service-card hover-lift" data-aos="flip-left" data-aos-delay="300">
+          <div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+          <h3>Responsive</h3>
+          <p>Mobil, tablet və desktop üçün tam uyğunlaşan layoutlar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bloq -->
+  <section id="blog" class="section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-right">Bloq</h2>
+      <div class="blog-grid">
+        <article class="blog-card hover-lift" data-aos="fade-up">
+          <div class="blog-meta"><span class="badge">Frontend</span><span class="date">2025-12-15</span></div>
+          <h3 class="blog-title hover-glow">CSS və JS ilə daha yaxşı dizayn</h3>
+          <p class="blog-desc">Modul CSS, komponent əsaslı UI və səliqəli animasiyalar üçün praktik ipucları.</p>
+          <a href="#" class="blog-link">Davamını oxu</a>
+        </article>
+        <article class="blog-card hover-lift" data-aos="fade-up" data-aos-delay="100">
+          <div class="blog-meta"><span class="badge">Animasiya</span><span class="date">2025-11-01</span></div>
+          <h3 class="blog-title hover-glow">GSAP sirləri</h3>
+          <p class="blog-desc">Timeline, stagger və scrollTrigger ilə peşəkar animasiya nümunələri.</p>
+          <a href="#" class="blog-link">Davamını oxu</a>
+        </article>
+        <article class="blog-card hover-lift" data-aos="fade-up" data-aos-delay="200">
+          <div class="blog-meta"><span class="badge">Responsive</span><span class="date">2025-10-20</span></div>
+          <h3 class="blog-title hover-glow">Mobil uyğunlaşdırma yolları</h3>
+          <p class="blog-desc">Grid, flex və container strategiyaları ilə tam uyğunlaşma.</p>
+          <a href="#" class="blog-link">Davamını oxu</a>
+        </article>
+        <article class="blog-card hover-lift" data-aos="fade-up" data-aos-delay="200">
+          <div class="blog-meta"><span class="badge">Robotexnika</span><span class="date">2025-10-20</span></div>
+          <h3 class="blog-title hover-glow">Robotexnikanın Əsasları</h3>
+          <p class="blog-desc">Robotların Qurulması Və Programlaşdırılması. Spike Dilində Layihələrin Qurulması</p>
+          <a href="#" class="blog-link">Davamını oxu</a>
+        </article>
+        <article class="blog-card hover-lift" data-aos="fade-up" data-aos-delay="200">
+            <div class="blog-meta"><span class="badge">Musuqi</span><span class="date">2023-05-20</span></div>
+            <h3 class="blog-title hover-glow">Piano</h3>
+            <p class="blog-desc">5 İl Musiqi Məktəbində Forte Piano Üzrə Təhsil ALmışam Və peşəkar Şəkildə Piano İfa Edə Bilirəm</p>
+            <a href="#" class="blog-link"> Davamını Oxu</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Əlaqə (yenidən dizayn) -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-right">Əlaqə</h2>
+      <div class="contact-wrap">
+        <div class="contact-info hover-lift" data-aos="fade-up">
+          <h3 class="contact-title">Məni tap</h3>
+          <p class="contact-desc">Sualların, əməkdaşlıq təklifin və ya layihə ideyan varmı? Yaz, cavab verim.</p>
+          <div class="contact-list">
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:sizinmail@domain.com">hanokanner@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Bakı, Azərbaycan</span>
+            </div>
+          </div>
+          <div class="social-links contact-socials">
+            <a class="social-btn instagram" href="https://instagram.com/ok4nner" target="_blank" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a class="social-btn tiktok" href="https://tiktok.com/@0k4nner" target="_blank" aria-label="TikTok">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a class="social-btn github" href="https://github.com/seninhesabin" target="_blank" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form hover-lift" data-aos="fade-up" data-aos-delay="150">
+          <div class="form-row">
+            <div class="form-field">
+              <label>Ad Soyad</label>
+              <input type="text" placeholder="Ad Soyad" required />
+            </div>
+            <div class="form-field">
+              <label>Email</label>
+              <input type="email" placeholder="Email" required />
+            </div>
+          </div>
+          <div class="form-field">
+            <label>Mövzu</label>
+            <input type="text" placeholder="Mövzu" />
+          </div>
+          <div class="form-field">
+            <label>Mesaj</label>
+            <textarea placeholder="Mesajınız" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn primary">Göndər</button>
+          
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Əli Qurbanov.</p>
+      <p class="small">Əli Qurbanov Tərəfindən Hazırlanmış Şəxsi Portfolio</p>
+    </div>
+  </footer>
+
+  <!-- Skriptlər -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
